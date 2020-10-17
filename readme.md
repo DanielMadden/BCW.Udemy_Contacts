@@ -1,4 +1,4 @@
-# Everything I've added
+# Additions/Modifications
   
 ### Buttons
 * Add Contact button now changes colors and icon on toggle
