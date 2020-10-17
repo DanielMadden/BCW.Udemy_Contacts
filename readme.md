@@ -5,7 +5,7 @@ As usual, when a project is complete I like to throw my own spin onto it.
 Everything I've added:
   
   Buttons
-     * Add Contact button now changes colors and icon on toggle
+     - Add Contact button now changes colors and icon on toggle
      * Sorting buttons
        * Sort by type
        * Change sorting direction
