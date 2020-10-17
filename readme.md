@@ -1,7 +1,3 @@
-
-
-As usual, when a project is complete I like to throw my own spin onto it.
-
 # Everything I've added
   
 ### Buttons
