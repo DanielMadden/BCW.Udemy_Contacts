@@ -119,6 +119,7 @@ function removeContact(contactId) {
   // After researching the different ways to alter an array, I deducted that splice was the smartest route due to .delete leaving a null value in the array
   contacts.splice(deletedContact, 1)
   saveContacts()
+  deleteClick()
 }
 
 // Toggles "add contact" section and button
@@ -178,6 +179,11 @@ function buttonClick() {//@ts-ignore
 // Sound for submit
 function submitClick() {//@ts-ignore
   document.getElementById("submit-click").play()
+}
+
+// Sound for submit
+function deleteClick() {//@ts-ignore
+  document.getElementById("delete-click").play()
 }
 
 // Event triggered by checking "emergency contact."
