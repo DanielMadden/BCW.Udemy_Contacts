@@ -6,7 +6,7 @@
   --primary-darken: #004d96;
   --bg: #e0d9d9;
   --shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-  --corners: 0;
+  --corners: 20px;
   --text-color: #3a3838;
   --dark: #3a3838;
   --dark-lighten: #504c4c;
@@ -309,8 +309,8 @@ input{
 
 #corner-cover {
   /* border-radius: 50%; */
-  border-top-left-radius: 20%;
-  border-bottom-left-radius: 20%;
+  border-top-left-radius: 20px;
+  /* border-bottom-left-radius: 20%; */
   position: fixed;
   right: 0em;
   bottom: 0em;
@@ -332,6 +332,7 @@ input{
   right:0;
   z-index: 997;
   width: 80%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 
 #sorting-type {
