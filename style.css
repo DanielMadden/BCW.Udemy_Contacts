@@ -113,18 +113,18 @@ input{
   height:40px
 }
 
-.add-padding-1 {
+/* .add-padding-1 {
   padding-left:40;
   padding-right:40;
 }
 .add-padding-2 {
-  padding-left:80;
-  padding-right:80;
-}
+  padding-left:5%;
+  padding-right:5%;
+} */
 
 .contacts{
   overflow-y: scroll;
-  /* max-height: 50vh;  */
+  /* max-height: 100vh;  */
 }
 
 .container{
@@ -315,6 +315,16 @@ input{
   width: 30;
   height: 200;
   background-color: var(--light);
+}
+
+#new-contact-form {
+  margin: 1em auto;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 997;
+  width: 80%;
 }
 
 #sorting-type {
