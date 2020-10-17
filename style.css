@@ -29,6 +29,13 @@ body{
   color: var(--text-color);
   /* DONE Add font-family from google */
   font-family: 'Montserrat', sans-serif;
+  /* overflow: hidden; */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* hr{
