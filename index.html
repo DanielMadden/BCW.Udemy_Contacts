@@ -19,6 +19,7 @@
       <i class="fa fa-fw fa-address-book"></i>
       <span>My Contact List</span>
     </h1>
+    <div id="corner-cover"></div>
     <button onclick="toggleDirection()" id="fab-sort-direct" class="fab" title="Sort Direction">
       <i id="sort-direction" class="fa fa-sort-amount-asc" aria-hidden="true"></i>
     </button>
@@ -56,7 +57,7 @@
 
       <!-- <hr> -->
 
-      <div id="color-div" class="mt-2 mb-2">
+      <div id="color-div" class="mt-2 mb-2 add-padding-1">
         <input class="hidden" id="color" type="text" name="color" value="white">
         <!-- <span>Color:</span> -->
         <div class="d-flex space-between mt-2">
@@ -75,7 +76,7 @@
 
 
       <hr>
-      <div class="d-flex space-between">
+      <div class="d-flex space-between add-padding-2 mt-2">
         <button class="new-contact-button" type="submit">Submit</button>
         <button onclick="toggleAddContactForm()" class="new-contact-button btn-cancel" type="button">cancel</button>
       </div>

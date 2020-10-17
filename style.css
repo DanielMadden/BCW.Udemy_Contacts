@@ -108,11 +108,18 @@ input{
 }
 
 .color-button:focus{
-  /* outline: 2px solid var(--dark); */
-  /* outline-offset: 3px; */
   outline:0;
   width:40px;
   height:40px
+}
+
+.add-padding-1 {
+  padding-left:40;
+  padding-right:40;
+}
+.add-padding-2 {
+  padding-left:80;
+  padding-right:80;
 }
 
 .contacts{
@@ -207,15 +214,15 @@ input{
 .fab{
   border-radius: 50%;
   position: fixed;
-  right: 1em;
+  right: 15;
   padding: 1.5em;
   border: none;
   box-shadow: var(--shadow);
   z-index: 999;
   outline: none;
   color: var(--light);
-  width: 55;
-  height: 55;
+  width: 60;
+  height: 60;
 }
 .fab:hover{
   box-shadow: 2px 0 10px #158ae9b3;
@@ -267,17 +274,17 @@ input{
 /* #region IDs */
 
 #fab-new-contact {
-  bottom: 1em;
+  bottom: 15;
   background-color: var(--fab-color);
 }
 
 #fab-sort-type {
-  bottom: 7em;
+  bottom: 100;
   background-color: var(--fab-sort-color);
 }
 
 #fab-sort-direct {
-  bottom: 13em;
+  bottom: 185;
   background-color: var(--fab-sort-color);
 }
 
@@ -291,6 +298,23 @@ input{
 
 #fab-sort-direct:hover {
   background-color: var(--fab--sort-color-light);
+}
+
+#corner-cover {
+  /* border-radius: 50%; */
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  position: fixed;
+  right: 0em;
+  bottom: 0em;
+  padding: 1.5em;
+  border: none;
+  box-shadow: var(--shadow);
+  z-index: 998;
+  outline: none;
+  width: 30;
+  height: 200;
+  background-color: var(--light);
 }
 
 #sorting-type {
