@@ -56,6 +56,7 @@ function addContact(event) {
 // Saves contacts to localStorage
 function saveContacts() {
   window.localStorage.setItem('contacts', JSON.stringify(contacts))
+  sortContacts(sortType)
   drawContacts()
 }
 
