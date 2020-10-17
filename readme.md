@@ -2,7 +2,7 @@
 
 As usual, when a project is complete I like to throw my own spin onto it.
 
-# Everything I've added:
+# Everything I've added
   
 ### Buttons
 * Add Contact button now changes colors and icon on toggle
@@ -28,7 +28,9 @@ As usual, when a project is complete I like to throw my own spin onto it.
  
 
  
-## What I learned/reviewed through research and reinforced by customizing the project:
+# Takeaways
+
+### Through research and reinforcement by customization, I learned...
  
 * How to create and altercate an object*filled array
 * How to save and load an object*filled array from local storage by properly using the JSON functions
