@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contacts</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Google Font Input -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="container card">
+    <h1>
+      <i class="fa fa-fw fa-address-book"></i>
+      <span>My Contact List</span>
+    </h1>
+    <button onclick="toggleDirection()" id="fab-sort-direct" class="fab" title="Sort Direction">
+      <i id="sort-direction" class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+    </button>
+    <button onclick="toggleSort()" id="fab-sort-type" class="fab" title="Sort">
+      <i id="sort-type" class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+    </button>
+    <button onclick="toggleAddContactForm()" id="fab-new-contact" class="fab" title="New Contact">
+      <i id="plus-minus" class="fa fa-lg fa-plus-circle"></i>
+    </button>
+    </div>
+    <hr>
+  </header>
+
+  <main class="container">
+    <form class="card mt-1 mb-1 hidden" id="new-contact-form" onsubmit="addContact(event)">
+      <div>
+        <h4 class="mt-1 mb-1">
+          <i class="fa fa-fw fa-user"></i>
+          <span>Add Contact</span>
+        </h4>
+      </div>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+      </div>
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="number" name="phone">
+      </div>
+
+      <div id="e-contact-div" class="mt-3 mb-1">
+        <input id="e-contact-box" type="checkbox" name="eContact" onclick="toggleColor(event)">
+        <span>&nbsp Emergency Contact</span>
+      </div>
+
+      <!-- <hr> -->
+
+      <div id="color-div" class="mt-2 mb-2">
+        <input class="hidden" id="color" type="text" name="color" value="white">
+        <!-- <span>Color:</span> -->
+        <div class="d-flex space-between mt-2">
+          <div id="colors" class="d-flex space-between mt-1 mb-1">
+            <button class="color-button color-red" type="button" onclick="setColor('red')"></button>
+            <button class="color-button color-orange" type="button" onclick="setColor('orange')"></button>
+            <button class="color-button color-yellow" type="button" onclick="setColor('yellow')"></button>
+            <button class="color-button color-green" type="button" onclick="setColor('green')"></button>
+            <button class="color-button color-blue" type="button" onclick="setColor('blue')"></button>
+            <button class="color-button color-purple" type="button" onclick="setColor('purple')"></button>
+            <!-- <button class="color-button color-dark" type="button" onclick="setColor('dark')"></button> -->
+            <button class="color-button color-white" type="button" onclick="setColor('white')"></button>
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+      <div class="d-flex space-between">
+        <button class="new-contact-button" type="submit">Submit</button>
+        <button onclick="toggleAddContactForm()" class="new-contact-button btn-cancel" type="button">cancel</button>
+      </div>
+    </form>
+
+    <div class="contacts" id="contact-list">
+
+    </div>
+  </main>
+
+  <audio id="click" src="button-click.mp3"></audio>
+  <audio id="submit-click" src="submit-click.mp3"></audio>
+  <script src="main.js"></script>
+</body>
+
+</html>
