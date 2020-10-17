@@ -2,9 +2,9 @@
 
 As usual, when a project is complete I like to throw my own spin onto it.
 
-Everything I've added:
+# Everything I've added:
   
-  Buttons
+### Buttons
 * Add Contact button now changes colors and icon on toggle
 * Sorting buttons
   * Sort by type
@@ -12,23 +12,23 @@ Everything I've added:
 * Buttons now make sounds
 * Submit button and directional sort button have different sounds
   
-  New Contact
+### New Contact
 * Moved emergency contact button to left; text is now next to button
 * Added ability to choose the color of the contact card.
   * Emergency contact overrides the color
   
-  Contacts
+### Contacts
 * Contact array now holds new value: color
 * Contact cards have different colors
   
-  LocalStorage
+### LocalStorage
 * Holds value of directional sorting preference
 * Holds value of sorting preference
   
  
 
  
-  What I learned reviewed through research and reinforced by customizing the project:
+## What I learned/reviewed through research and reinforced by customizing the project:
  
 * How to create and altercate an object*filled array
 * How to save and load an object*filled array from local storage by properly using the JSON functions
